@@ -7,41 +7,41 @@
     <link rel="stylesheet" href="normalize.css">
 </head>
 <style>
-  table.CHESS{
+  .CHESS{
     border-collapse: collapse;
   }
-  table.CHESS td {
+  .CHESS td {
     width: 50px;
     height: 50px;
     border: solid gray 1px;
   }
   
-  .coloring tr:nth-child(odd) td:nth-child(even) {
+  .CHESS tr:nth-child(odd) td:nth-child(even) {
 	background: black;
   }	
-  .coloring tr:nth-child(even) td:nth-child(odd) {
+  .CHESS tr:nth-child(even) td:nth-child(odd) {
 	background: black;
   }
-  .frame tr:first-of-type td{
-    background: aquamarine !important;
+  .CHESS.CHESS tr:first-of-type td{
+    background: aquamarine;
     height: 25px;
   }
-  .frame tr:last-of-type td{
-    background: aquamarine !important;
+  .CHESS.CHESS tr:last-of-type td{
+    background: aquamarine;
     height: 25px;
   }
-  .frame td:first-of-type{
-    background: aquamarine !important;
+  .CHESS.CHESS.CHESS td:first-of-type{
+    background: aquamarine;
     width: 25px;
   }
-  .frame td:last-of-type{
-    background: aquamarine !important;
+  .CHESS.CHESS.CHESS td:last-of-type{
+    background: aquamarine;
     width: 25px;
   }
 
 </style>
 <body>
-    <table class='CHESS coloring frame'>
+    <table class='CHESS'>
         <tr>
           <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
         </tr>
