@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<style>
+    * a:hover{
+        color: red;
+    }
+    * div{
+        display: flex;
+        line-height: 1cm;
+        margin: 5%;
+        
+    }
+    .linear a{
+         /*использование ссылок без блочных тегов позволяет быстро и просто горизонтально рассположить ссылки  */
+        border-right: 5px solid rgb(243, 20, 20);
+        width: 10%;
+        height: 100%;
+        margin: 1.5%;
+    }
+    .float div{
+        /* float-обтекание. Данное свойство достаточно назначить одному элементу, а следующий в независимости от свойств встанет в одну строку с ним
+        +Поддерживается всеми браузерами.
+        +Простой способ "расталкивания" элементов влево и вправо внутри родительского контейнера.
+        +Простой способ реализации обтекания изображения текстом.
+        +Элемент с float:right будет помещен вторым по порядку (справа) на двух колоночной странице, несмотря на то, что он является первым элементом в исходном HTML коде. Иногда это может пригодиться.
+        -Не может быть использовано для центрирования (горизонтального или вертикального).
+        -Чтобы избежать проблем с отображением и компоновкой, требуется использование «clearfix hack» в родительском контейнере.
+        -Float-элемент с фиксированной шириной (px) рядом с float-элементом c динамической шириной (%) может вызвать проблемы с компоновкой, если доступного горизонтального пространства окажется недостаточно.*/
+        float:left;
+        border-right: 5px solid rgb(243, 20, 20);
+        width: 10%;
+        height: 100%;
+        margin: 1.5%;
+        
+    }
+    .inline div{
+        /* данное свойство выстраивает элементы в строку. НО если не установить свойство width, блоки примут по умолчанию значение ширины всей страницы
+        +Поддерживается во всех браузерах.
+        +Возможность горизонтального и вертикального центрирования.
+        +Можно использовать выравнивание по вертикали для выравнивания элементов разной высоты в строке по верхнему, нижнему краю или по центру.
+        -При наличии дополнительного пространства в HTML коде возникают пробелы.
+        -Невозможно легко прижать два inline-block элемента к левому и правому краю родительского контейнера.
+        -Необходимо переопределить text-align: center; дочерних контейнеров, иначе текст внутри этих контейнеров будет также центрирован.*/
+        display: inline-block;
+        border-right: 5px solid rgb(243, 20, 20);
+        width: 10%;
+        height: 100%;
+        margin: 1.5%;
+    }
+    .table div{
+        /* данным свойством мы говорим блокам вести себя как ячейки таблицы
+        +Все столбцы в ряду имеют одинаковую высоту, равную высоте самого высокого из них.
+        +Вы можете использовать ячейку статической ширины рядом с ячейкой с динамической шириной без боязни, что вторая будет смещена на следующую строку.
+        +Вы можете разместить по бокам два контейнера с фиксированной шириной, если поместите между ними контейнер с шириной, равной auto.
+        -По умолчанию ячейки таблицы имеют одинаковую высоту.
+        -Ячейки таблиц всегда растягиваются так, чтобы охватить всю ширину строки, если только вы не указали фиксированную, не процентную ширину.*/
+        display: table-cell;
+        border-right: 5px solid rgb(243, 20, 20);
+        width: 10%;
+        height: 100%;
+        margin: 1.5%;
+    
+    }
+    .flex div{
+        /* Flexbox объединяет все плюсы каждого из предыдущих методов в одну невероятно надежную систему компоновки.
+        +Простое объявление display: flex; в родительском контейнере дает вам дочерние элементы равной высоты и ширины.
+        +Существует огромное множество возможных комбинаций всех flexbox свойств.
+        +Вы можете использовать display: flex; для создания flex-элементов, которые затем будут игнорировать свойства float и inline-block, что может быть полезным, когда вам нужно предоставить фоллбеки (fallbacks) для старых браузеров.
+        -Вы должны объединять flex-элементы в рамках родительского элемента.
+        -Из-за большого количества возможностей, вначале этот метод может показаться сложным и запутанным.
+        -Поддержка браузеров по-прежнему несколько ограничена, поэтому не забудьте проверить, какие браузеры вам нужно поддерживать в проекте, и нужно ли вам использовать float или inline-block методы в качестве фоллбеков. */
+        display: flex;
+        border-right: 5px solid rgb(243, 20, 20);
+        width: 10%;
+        height: 100%;
+        margin: 1.5%;
+        
+}
+        
+
+</style>
+<body>
+    <div class="linear">
+        <a href="https://github.com/AsyaTabankova/IT/tree/homework1">work1</a>
+        <a href="https://github.com/AsyaTabankova/IT/tree/homework2">work2</a>
+        <a href="https://github.com/AsyaTabankova/IT/tree/homework3-fonts">work3</a>
+        <a href="https://github.com/AsyaTabankova/IT/tree/homework4_table">work4</a>
+        <a href="https://github.com/AsyaTabankova/IT/tree/homework5_table%26div">work5</a>
+        <a href="https://github.com/AsyaTabankova/IT/tree/homework6">work6</a>
+    </div>
+    <div class="float">
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework1">work1</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework2">work2</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework3-fonts">work3</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework4_table">work4</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework5_table%26div">work5</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework6">work6</a></div>
+    </div>
+    <div class="inline">
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework1">work1</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework2">work2</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework3-fonts">work3</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework4_table">work4</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework5_table%26div">work5</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework6">work6</a></div>
+    </div>
+    <div class="table">
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework1">work1</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework2">work2</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework3-fonts">work3</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework4_table">work4</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework5_table%26div">work5</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework6">work6</a></div>
+    </div>
+    <div class="flex">
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework1">work1</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework2">work2</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework3-fonts">work3</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework4_table">work4</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework5_table%26div">work5</a></div>
+        <div><a href="https://github.com/AsyaTabankova/IT/tree/homework6">work6</a></div>
+    </div>
+</body>
+</html>
