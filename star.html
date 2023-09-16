@@ -6,26 +6,29 @@
     <title>STAR</title>
 </head>
 <style>
+    .float{
+        float: left;
+    }
     .picture{ 
         background: url('star0.png'); 
-        display: inline-block;
-        float: left;
         width: 75px; 
         height: 78px; 
+        display: inline-block;
+        float: right;
     }
-    .picture:hover ~.picture{ 
+    .picture:hover,
+    .picture:hover~span{ 
         background: url('star1.png');
-        transform
     }
 
 </style>
 <body>
     <div class="float">
-       <div class='picture'></div>
-       <div class='picture'></div>
-       <div class='picture'></div>
-       <div class='picture'></div>
-       <div class='picture'></div>
+       <span class="picture"></span>
+       <span class='picture'></span>
+       <span class='picture'></span>
+       <span class='picture'></span>
+       <span class='picture'></span>
     </div>
 </body>
 </html>
