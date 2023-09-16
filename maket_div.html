@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maket_div</title>
+</head>
+<style>
+    * a:hover{
+        color: rgb(0, 4, 255);
+    }
+    .menu{
+        float: left;
+        background-color:bisque;
+        padding: 10px;
+        width: 30%; 
+    }
+    .greetings{
+        text-align: center; 
+        padding: 20px; 
+        color: blue; 
+        background-color: rgba(127, 214, 255, 0.639);
+    }
+    .text{
+        margin-left: 37%; 
+    }
+    .img{
+        float: left; 
+        width: 40%;
+    }
+    .ball{
+        background: url(ball.png) repeat-y right opacity: 0;;
+    }
+    @media all and (min-width: 800px){
+        .ball{
+            background: url(ball.png) repeat-y right;
+        }
+    }
+    @media all and (max-width: 700px){
+        /* картинка 100% текст уходит под картинку */
+       .img{
+          width: 100%;
+       }
+    }  
+    @media all and (max-width: 360px){
+        /* меню на 100%, текст и картинка под меню */
+        .menu{    
+        background-color:bisque;
+        padding: 10px;
+        width: 100%; 
+        }
+        .text{
+        margin-left: 0%; 
+    }
+    }
+</style>
+<body>
+    <div class="greetings">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</div>
+    <div class="menu">
+        <p style="font-weight: bold;">Виды спорта:</p>
+        <ul>
+            <li><a href="maket_table.html">конькобежный спорт</a></li>
+            <li><a href="maket_table.html">биатлон</a></li>
+            <li><a href="maket_table.html">футбол</a></li>
+            <li><a href="maket_table.html">стрельба из лука</a></li>
+            <li><a href="maket_table.html">прыжки в длину</a></li>
+            <li><a href="maket_table.html">прыжки в высоту</a></li>
+            <li><a href="maket_table.html">фигурное катание</a></li>
+            <li><a href="maket_table.html">синхронное плавание</a></li>
+            <li><a href="maket_table.html">шахматы</a></li>
+            <li><a href="maket_table.html">шашки</a></li>
+        </ul>
+    </div>
+    <div class="text ball">
+        <h1 style="text-align: center;">Футбол</h1>
+        <img src="footbol.png" alt="Футбольная команда" class="img">
+        <p>Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника.</p>
+        <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формировались в общих чертах, которые позволяют упростить их применение в зависимости от характера игры.</p>
+    </div>
+    </span>    <div class="greetings">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
+</body>
+</html>
