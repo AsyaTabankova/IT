@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    .title{
+        padding-bottom: 20px;
+    }
+    .bl{
+        float: left;
+        width: 170px;
+    }
+    .name{
+        margin-left: 170px;
+    }
+    .name input{
+        width: 100%;
+    }
+    .rub{
+        width: 25%;
+    }
+    .publ{
+        width: 98%;
+    }
+    .text{
+       width: 100%;
+    }
+    .comment{
+        display: inline-block;
+    }
+    @media all and (max-width: 600px){
+        .bl{
+            display: block;
+            width: 100%;
+        }
+    .name{
+        margin-left: 0;
+        width: 100%;
+    }
+    .rub{
+        width: 100%;
+    }
+    .publ{
+        display: block;
+    }
+    .text{
+       width: 100%;
+    }
+
+</style>
+</head>
+<body>
+
+<form class="form" method="post" action="AddAnketa.php"> 
+<legend class="title">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</legend> 
+<div>
+<div class="bl">
+<label>Название статьи:</label>
+</div>
+<div class="name">
+<input type=text" name="name"> 
+</div>       
+</div>
+  <div>
+  <label class="bl">Рубрика:</label>
+     <select class="rub">
+         <option value="1">программирование</option>
+         <option value="2">психология</option>
+         <option value="3">философия</option>
+     </select>
+  </div>
+  <div>
+  <label class="bl">Публикация:</label>
+     <label class="publ"><input type="radio" name="publ">на сайте</label>
+     <label class="publ"><input type="radio" name="publ">в журнале</label>
+     <label class="publ"><input type="radio" name="publ">на сайте и в журнале</label>
+     </div>
+  <div>
+  <label class="bl">Разрешить комментарий</label>
+     <input type="checkbox" name="comment" value="YES" class="comment">
+  </div>
+ Tекст статьи:
+ <textarea class=text name="text"></textarea>
+ <input type="submit" value="Опубликовать!">
+ 
+</form>
+</body>
+</html>
