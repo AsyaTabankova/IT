@@ -8,8 +8,8 @@
 <style>
     .layout{
         display: grid;
-        grid-template-columns: 200px 1fr; 
-        grid-template-rows: 30px 1fr 30px;
+        /* grid-template-columns: 200px 1fr; 
+        grid-template-rows: 30px 1fr 30px; */
         grid-column-gap: 10px;
     }
     .head{
@@ -22,6 +22,12 @@
     .menu{
         grid-column: 1; 
         grid-row: 2;
+    }
+    menu{
+        padding: 20px;
+    }
+    ul{
+        padding: 0;
     }
     .text{
         grid-column: 2; 
@@ -53,18 +59,21 @@
     @media all and (max-width: 600px){
         .cont{
             display: grid;
-            grid-template-columns: 1fr; 
-            grid-template-rows: 10px 30px 30px 10px;
+            /* grid-template-columns: 1fr; 
+            grid-template-rows: 10px 30px 30px 10px; */
         }
         .head{
             background-color: rgb(106, 158, 238); 
             grid-column: 1; 
             grid-row: 1;
-            font-size: 13px;
+            font-size: 20px;
         }
         .menu{
             grid-column: 1; 
             grid-row: 3;
+        }
+        menu{
+            padding: 0px;
         }
         .text{
             grid-column: 1; 
