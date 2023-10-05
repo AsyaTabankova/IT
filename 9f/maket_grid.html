@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maket_grid</title>
+</head>
+<style>
+    .layout{
+        display: grid;
+        grid-template-columns: 200px 1fr; 
+        grid-template-rows: 30px 1fr 30px;
+        grid-column-gap: 10px;
+    }
+    .head{
+        background-color: rgb(106, 158, 238); 
+        grid-column: 1 / span 2; 
+        grid-row: 1;
+        text-align: center;
+        font-size: 27px;
+    }
+    .menu{
+        grid-column: 1; 
+        grid-row: 2;
+    }
+    .text{
+        grid-column: 2; 
+        grid-row: 2;
+    }
+    .img{
+        float: left; 
+        width: 40%;
+        padding-right: 10px;
+    }
+    .ball{
+        background: url(ball.png) repeat-y right opacity: 0;
+    }
+    .foot{
+        background-color: rgb(106, 158, 238); 
+        grid-column: 1 / span 2; 
+        grid-row: 3;
+        text-align: center;
+        font-size: 27px;
+    }
+    @media all and (min-width: 600px){
+        .ball{
+            background: url(ball.png) repeat-y right;
+        }
+        .menu{
+        background-color:bisque;
+        }
+    }
+    @media all and (max-width: 600px){
+        .cont{
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 10px 30px 30px 10px;
+        }
+        .head{
+            background-color: rgb(106, 158, 238); 
+            grid-column: 1; 
+            grid-row: 1;
+            font-size: 13px;
+        }
+        .menu{
+            grid-column: 1; 
+            grid-row: 3;
+        }
+        .text{
+            grid-column: 1; 
+            grid-row: 2;
+        }
+        .img{
+            width: 100%;
+        }
+        .menu2{
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            width: 100%;
+        }
+        .menu2 li{
+            padding-left: 10px;
+        }
+        .foot{
+            background-color: rgb(106, 158, 238); 
+            grid-column: 1; 
+            grid-row: 4;
+            text-align: center;
+            font-size: 13px;
+        }
+    
+    }
+</style>
+<body>
+    <div class="layout">
+    <header class="head" role="banner" >ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</header>
+    <menu class="menu" role="search" >
+        <p style="font-weight: bold;">Виды спорта:</p>
+        <ul class="menu2">
+            <li><a href="maket_table.html">конькобежный спорт</a></li>
+            <li><a href="maket_table.html">биатлон</a></li>
+            <li><a href="maket_table.html">футбол</a></li>
+            <li><a href="maket_table.html">стрельба из лука</a></li>
+            <li><a href="maket_table.html">прыжки в длину</a></li>
+            <li><a href="maket_table.html">прыжки в высоту</a></li>
+            <li><a href="maket_table.html">фигурное катание</a></li>
+            <li><a href="maket_table.html">синхронное плавание</a></li>
+            <li><a href="maket_table.html">шахматы</a></li>
+            <li><a href="maket_table.html">шашки</a></li>
+        </ul>
+    </menu>
+    <article class="text ball" role="main" >
+        <h1 style="text-align: center;">Футбол</h1>
+        <img src="footbol.png" alt="Футбольная команда" class="img">
+        <p>Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника.</p>
+        <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формировались в общих чертах, которые позволяют упростить их применение в зависимости от характера игры.</p>
+    </article>  
+    <footer class="foot" role="contentinfo" >ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</footer>
+    </div>
+</body>
+</html>
